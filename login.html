@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: rgba(161, 109, 14, 1);
+            padding: 20px;
+            background-image: url(Images/loginbody.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(30%);
+    height: 800px;
+    .card{
+    background-image: url(Images/login.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(20%);
+    color: white;
+
+}
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #573818;
+            font-weight: bolder;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        /* Responsive Media Queries */
+        @media screen and  (max-width: 767px) {
+            body{
+    height: 1000px;
+ 
+.col-md-6{
+    padding-top: 50px;
+}
+}
+ 
+       }
+       @media screen and  (min-width: 768px) and (max-width:991px) {
+ 
+        body{
+    height: 1300px;
+
+}
+.col-md-6{
+    padding-top: 200px;
+}
+
+
+}
+
+        
+      
+
+      @media screen and  (min-width: 992px) and (max-width:1199px) {
+
+        body{
+    height: 1510px;
+
+}
+.col-md-6{
+    padding-top: 400px;
+}
+
+
+
+      }
+      @media screen and  (min-width: 1200px) {
+body{
+    height: 800px;
+
+}
+
+
+      }
+          
+            
+        
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title text-center" style="text-decoration:underline;">Login to Your Account</h2>
+                <form action="login.php" method="POST">
+                  <div class="mb-3">
+                    <label for="username" class="form-label">Username:</label>
+                    <input type="text" id="username" name="username" class="form-control" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-outline-success">Login</button>
+                    <hr>
+                    <p >To create an account</p>
+                    <button type="submit" class="btn btn-outline-secondary"> <a href="signup.html" style="color: white;">signup here</a> </button>
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+           
+            
+            
+  
+        
+
+  
+
+  
+
+   
+    
+
+
+    <script src="JS/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

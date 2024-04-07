@@ -1,0 +1,485 @@
+*{
+    body{
+        background-color: #573818;
+        scroll-behavior: smooth;
+    }
+}
+
+
+.navbarcss {
+    padding: 10px;
+  }
+  .navbarcss {
+      justify-content: space-between;
+    }
+  .navbar-nav .nav-link {
+    padding: 10px 15px;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+
+.navbarcss{
+    background-color: #573818;
+  
+    font-weight: bold;
+}
+.logo{
+    font-size: 23px;
+    color: white;
+}
+.logo img{
+    margin-bottom: 15px;
+}
+.navbar-nav{
+    margin-left: 10px;
+}
+.nav-link{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+.nav-link:hover{
+    background-color: rgba(161,109,14,1);
+    color: white;
+    border-radius: 5px;
+}
+.dropdown-menu li {
+    position: relative;
+    }
+    .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    }
+    .dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+    }
+    .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+    }
+    .dropdown-item:hover{
+        background-color: rgba(161,109,14,1);
+        color: white;
+        border-radius: 5px;
+    }
+    .dropdown-menu{
+        background-color:  #573818;
+        color: white;
+    }
+    .dropdown-item{
+        color: white;
+        background-color: #573818;
+    }
+    
+    .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+      }
+      .Head{
+        background-color: rgba(161,109,14,1);
+        text-align: center;
+       
+    }
+      
+        .Headani{
+            color: red;
+            font-weight: bolder;
+            font-size: xx-large;
+           
+}
+
+.btnhover:hover{
+    color: #573818;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.btnhover{
+    color: white;
+    background-color: #573818;
+    font-weight: bolder;
+}
+      
+.card{
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
+    border: 0px #573818;
+}
+
+
+.cardspecial{
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
+    border: 0px #573818;
+    width: 9000px;
+}
+.cardspecial:hover{
+   transition: 1s ease;
+   -webkit-transition: 1s ease;
+   -moz-transition: 1s ease;
+   -ms-transition: 1s ease;
+   -o-transition: 1s ease;
+   border: 0px #573818;
+   filter: blur(10px);
+   transform: translateY(-10px);
+   -webkit-transform: translateY(-10px);
+   -moz-transform: translateY(-10px);
+   -ms-transform: translateY(-10px);
+   -o-transform: translateY(-10px);
+   filter: drop-shadow(10px 7px 30px chocolate);
+   -webkit-filter: blur(10px);
+}
+
+
+
+
+
+
+
+.card:hover{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    filter: drop-shadow(10px 7px 30px chocolate);
+    -webkit-filter: drop-shadow(10px 7px 30px chocolate);
+   
+}
+.starin{
+    color: yellow;}
+  
+      
+   .cssfot{
+
+   
+    color: white;
+    font-size: 24px;
+    height: 450px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(https://i.pinimg.com/736x/ef/cd/07/efcd07c308613985c7e8bea81970120a.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+   }
+   .footer{
+    padding: 0px;
+    height: 10px;
+   }
+   
+   @media screen and  (max-width: 767px) {
+
+    .cardspecial {
+  width: 100%;
+}
+
+.restexcards{
+  color: white;
+  font-size: 13px;
+  padding-top: 40px;
+
+}
+.resheadcards{
+text-align: center; font-weight: bolder; font-style: italic; color: aliceblue; text-decoration: underline;
+
+font-size: 15px;
+}
+.sectionhead{
+text-align: center; font-size: xx-large; font-weight: bolder; color: white; text-decoration: underline;
+}
+.priceres{
+padding-left: 150px;
+}
+.priceres2{
+border:5px solid #573818; width: 80px ; background-color: #573818; color: white; border-radius: 0px; font-weight: bold;
+}
+
+.card-text{
+font-size: 20px;
+padding-top: 30px;
+}
+.starin{
+padding-top: 35px;
+}
+.resmodal{
+font-weight: bolder; text-align: center; font-size: large; padding-left: 80px;
+}
+.resimg{
+height: 300px;
+}
+
+.cssfot{
+width: 100%;
+padding-left: 0px;
+height: 350px;
+font-size: 8px;
+}
+
+.resheadfot{
+
+color:Black; font-weight: bolder; font-size: 10px; text-decoration: underline;
+justify-content: space-between;
+
+}
+.resul{
+padding-top: 15px;
+font-size: 10px;
+padding-right: 20px;
+text-align: left;
+justify-content: space-between;
+}
+.resull{
+font-size: 12px;
+padding-top: 15px;
+text-align: right;
+padding-left: 20px;
+justify-content: space-between;
+
+
+
+
+}
+.headfotcake{
+color: #573818; font-weight: bolder; text-decoration: underline;
+font-size: 18px;
+}
+.pagination{
+    padding-top: 20px;
+}
+}
+   /* ------------------------------------------------------------768 --------------------------------------*/
+
+@media screen and  (min-width: 768px) and (max-width:991px) {
+
+    .cardspecial {
+      padding-top: 100px;
+      width: 100%;
+      }
+      .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      
+      .restexcards{
+        color: white;
+        font-size: 15px;
+        padding-top: 40px;
+  
+    } .resheadcards{
+      text-align: center; font-weight: bolder; font-style: italic; color: aliceblue; text-decoration: underline;
+  
+      font-size: 20px;
+    }
+    .sectionhead{
+      text-align: center; font-size: xx-large; font-weight: bolder; color: white; text-decoration: underline;
+    }
+  
+    .card-text{
+      font-size: 20px;
+      padding-top: 30px;
+    }
+    .starin{
+      padding-top: 35px;
+    }
+      
+    .priceres{
+      padding-left: 250px;
+    }
+      
+    
+    
+    .priceres2{
+      border:5px solid #573818; width: 80px ; background-color: #573818; color: white; border-radius: 0px; font-weight: bold;
+    }
+    .resmodal{
+    font-weight: bolder; text-align: center; font-size: large; padding-left: 150px;
+  }
+  .resimg{
+    height: 550px;
+  }
+  .resheadfot{
+  
+  color:Black; font-weight: bolder; font-size: 25px; text-decoration: underline;
+  }
+  .resul{
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  .resull{
+  padding-left: 65px; 
+  padding-top: 20px;
+  font-size: 30px;
+  
+   
+  }
+  .cssfot{
+    width: 100%;
+    padding-left: 0px;
+    height: 540px;
+    font-size: 20px;
+   }
+   .headfotcake{
+    color: #573818; font-weight: bolder; text-decoration: underline;
+    font-size: 20px;
+   }
+   .pagination{
+    padding-top: 20px;
+}
+  }
+        
+  /* ------------------------------------------------------------992 --------------------------------------*/
+  
+   
+  
+  @media screen and  (min-width: 992px) and (max-width:1199px) {
+  
+    .nav-item{
+      font-size: 10px;
+    }
+    .nav-link{
+      font-size: 10px;
+    }
+    .cardspecial {
+        width: 100%;
+      }
+      
+      .col-lg-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+  
+  
+      .restexcards{
+        color: white;
+        font-size: 17px;
+        padding-top: 40px;
+  
+    }
+    .resheadcards{
+      text-align: center; font-weight: bolder; font-style: italic; color: aliceblue; text-decoration: underline;
+  
+      font-size: 30px;
+    }
+    .sectionhead{
+      text-align: center; font-size: xx-large; font-weight: bolder; color: white; text-decoration: underline;
+    }
+    .priceres{
+      padding-left: 340px;
+    }
+      
+    
+    .priceres2{
+      border:5px solid #573818; width: 80px ; background-color: #573818; color: white; border-radius: 0px; font-weight: bold;
+    }
+  .card{
+  
+    height: 900px;
+  }
+  .resmodal{
+    font-weight: bolder; text-align: center; font-size: xx-large; padding-left: 250px;
+  }
+  .resimg{
+    height: 550px;
+  }
+  .card-text{
+      font-size: 22px;
+      padding-top: 30px;
+    }
+    .starin{
+      padding-top: 35px;
+    }
+  
+    .cssfot{
+  
+      width: 100%;
+  
+    }
+   
+  .resheadfot{
+  
+  color:Black; font-weight: bolder; font-size: 25px; text-decoration: underline;
+  }
+  .headfotcake{
+    color: #573818; font-weight: bolder; text-decoration: underline;
+    font-size: 23px;
+   }
+   .resul{
+    padding-top: 20px;
+    font-size: 40px;
+  }
+  .resull{
+  padding-left: 65px; 
+  padding-top: 20px;
+  font-size: 30px;
+  
+  }
+  .pagination{
+    padding-top: 50px;
+}
+  }
+  /* ------------------------------------------------------------1200 --------------------------------------*/
+  @media screen and  (min-width: 1200px) and (max-width: 20000px) {
+  
+    .cardspecial {
+        width: 100%;
+      }
+      .col-lg-4 {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+      }
+    
+      .restexcards{
+        color: white;
+        font-size: 20px;
+        padding-top: 60px;
+    }
+    .resheadcards{
+      text-align: center; font-weight: bolder; font-style: italic; color: aliceblue; text-decoration: underline;
+  
+      font-size: 50px;
+    }
+    .sectionhead{
+      text-align: center; font-size: xx-large; font-weight: bolder; color: white; text-decoration: underline;
+    }
+    .priceres {
+      padding-left: 300px;
+      
+    }
+    .priceres2{
+      border:5px solid #573818; width: 80px ; background-color: #573818; color: white; border-radius: 0px; font-weight: bold;
+    }
+    .resmodal{
+      font-weight: bolder; text-align: center; font-size: xx-large; padding-left: 450px;
+    }
+   .cssfot{
+    width: 100%;
+   }
+   .resheadfot{
+  
+    color:Black; font-weight: bolder; font-size: 30px; text-decoration: underline;
+   }
+   .resul{
+    padding-left: 15px;
+   }
+   .resull{
+    padding-left: 50px;
+   }
+   .headfotcake{
+    color: #573818; font-weight: bolder; text-decoration: underline;
+    font-size: 28px;
+   }
+   
+  }

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: rgba(161, 109, 14, 1);
+            padding: 20px;
+            background-image: url(https://t4.ftcdn.net/jpg/05/87/63/79/360_F_587637938_bnkZxzr0zLQtiva6AZZtLUNWnYvXQgQt.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(50%);
+    color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #573818;
+            font-weight: bolder;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        /* Responsive Media Queries */
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            .form-control {
+                font-size: 14px;
+            }
+
+            .btn {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 992px) {
+            h1 {
+                font-size: 36px;
+            }
+        }
+
+        @media only screen and (min-width: 993px) {
+          
+            h1 {
+                font-size: 48px;
+            }
+
+            label {
+                font-size: 16px;
+            }
+
+            .form-control {
+                font-size: 16px;
+              
+            }
+
+            .btn {
+                font-size: 16px;
+                padding: 12px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:white ;"><u>Purchase Form</u></h1>
+        <form id="purchaseForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="contactNumber">Contact Number</label>
+                <input type="number" class="form-control" id="contactNumber" name="contactNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="itemCode">Item Code</label>
+                <input type="text" class="form-control" id="itemCode" name="itemCode" placeholder="#266" readonly>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" class="form-control" id="quantity" name="quantity" min="1" required>
+            </div>
+            <!-- <div class="form-group">
+                <label for="deliveryAddress">Delivery Address</label>
+                <input type="text" class="form-control" id="deliveryAddress" name="deliveryAddress" required>
+            </div> -->
+            <div class="form-group">
+                <label for="deliveryDate">Delivery Date</label>
+                <input type="date" class="form-control" id="deliveryDate" name="deliveryDate" required>
+            </div>
+            <hr>
+            <div class="form-check">
+                <h2 style="color: white; font-weight: bolder;">Payment Method</h2>
+                <input class="form-check-input" type="radio" name="paymentMethod" id="cashOnDelivery" value="Cash on delivery" required>
+                <label class="form-check-label" for="cashOnDelivery">
+                    Cash on delivery
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="Credit card / Debit card">
+                <label class="form-check-label" for="creditCard">
+                    Credit card / Debit card
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="Paypal">
+                <label class="form-check-label" for="paypal">
+                    Paypal
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="paymentMethod" id="easyPaisa" value="Easy paisa / Jazz Cash">
+                <label class="form-check-label" for="easyPaisa">
+                    Easy paisa / Jazz Cash
+                </label>
+            </div>
+            <br>
+            <button type="submit" id="submitButton" class="btn btn-outline-success">Submit</button>
+            <button type="button" class="btn btn-outline-info" onclick="goBack()">Go back</button>
+        </form>
+        <hr>
+    </div>
+    
+<script>
+    // Function to validate the form
+    function validateForm() {
+        var form = document.getElementById("purchaseForm");
+        var name = form["name"].value;
+        var address = form["address"].value;
+        var contactNumber = form["contactNumber"].value;
+        var quantity = form["quantity"].value;
+        var deliveryDate = form["deliveryDate"].value;
+        var paymentMethod = form["paymentMethod"].value;
+
+        if (name === "" || address === "" || contactNumber === "" || quantity === "" || deliveryDate === "" || paymentMethod === "") {
+            alert("All fields are required");
+            return false;
+        }
+
+        return true;
+    }
+
+    // Adding submit event listener to the form
+    document.getElementById("purchaseForm").addEventListener("submit", function(event) {
+        if (!validateForm()) {
+            event.preventDefault();
+        }
+    });
+
+   
+    
+</script>
+
+    <script src="JS/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
